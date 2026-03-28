@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator leap-container">
+        <h1>📅 Leap Year Calculator</h1>
+        
+        <div class="display">
+            <input type="number" id="yearInput" placeholder="Enter year (e.g., 2024)">
+        </div>
+        
+        <div class="buttons">
+            <button class="btn check-btn" onclick="checkLeapYear()">
+                Check Year
+            </button>
+            <button class="btn clear-btn" onclick="clearInput()">
+                Clear
+            </button>
+        </div>
+        
+        <div id="result" class="result"></div>
+        
+        <div class="info">
+            <p>Leap year rules: Divisible by 4, not 100 (unless 400)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
